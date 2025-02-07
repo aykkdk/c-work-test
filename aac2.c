@@ -2,9 +2,9 @@
 #include <stdlib.h>	
 
 int main(void) {		
-    printf("¯Z¯Å:?????\n"); 
-    printf("¾Ç¸¹:********\n"); 
-    printf("©m¦W:$$$\n"); 
+    printf("Â¯ZÂ¯Ã…:?????\n"); 
+    printf("Â¾Ã‡Â¸Â¹:********\n"); 
+    printf("Â©mÂ¦W:$$$\n"); 
     system("pause");	
     return 0;
 }
