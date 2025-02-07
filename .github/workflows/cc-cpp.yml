@@ -18,7 +18,9 @@ jobs:
       run: sudo apt update && sudo apt install -y gcc
 
     - name: 编译 C 代码
-      run: gcc -o my_program *.c
+      run: |
+        # 假设 `main.c` 是包含 `main` 函数的文件，调整为适合你项目的文件名
+        gcc -o my_program main.c utils.c math.c
 
     - name: 运行程序（可选）
       run: ./my_program
