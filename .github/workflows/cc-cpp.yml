@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: C CI
 
 on:
   push:
@@ -8,16 +8,17 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: 检出代码
+      uses: actions/checkout@v4
+
+    - name: 安装编译工具
+      run: sudo apt update && sudo apt install -y gcc
+
+    - name: 编译 C 代码
+      run: gcc -o my_program *.c
+
+    - name: 运行程序（可选）
+      run: ./my_program
