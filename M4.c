@@ -4,7 +4,7 @@ int main(void)
 {
 	int a;
 	float b;
-	printf("請輸入消費金額<使用整數>:");
+	printf("請輸入<使用整數>:");
 	scanf("%d",&a);
 	printf("請輸入折扣<使用浮點數，例如打八折，則輸入0.8>:");
 	scanf("%f",&b);
