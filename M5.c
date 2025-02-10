@@ -3,18 +3,18 @@
 int main(void)
 {
 	float a,b,BMI;
-	printf("½Ğ¿é¤J¨­°ª©MÅé­«¨Ã¥ÎªÅ®æ°Ï¹j");
+	printf("è«‹è¼¸å…¥èº«é«˜å’Œé«”é‡ä¸¦ä½¿ç”¨ç©ºæ ¼");
 	scanf("%f %f",&a,&b);
 	BMI=b/(a*2);
     if(BMI<18.5)
     {
-    printf("§AªºBMI¬O%.1f¬°¹L»´\n",BMI);
+    printf("ä½ çš„BMIæ˜¯%.1fç‚ºéè¼•\n",BMI);
 	} else if ((BMI>=18.5)&&(BMI<24))
 	{
-	printf("§AªºBMI¬O%.1f¬°¼Ğ·Ç\n",BMI);	 
+	printf("ä½ çš„BMIæ˜¯%.1fç‚ºæ¨™æº–\n",BMI);	 
 	} else if (BMI>=24) 
 	{
-	printf("§AªºBMI¬O%.1f¬°¹L­«\n",BMI);	 
+	printf("ä½ çš„BMIæ˜¯%.1fç‚ºéé‡\n",BMI);	 
 	}
 	system("pause") ;
 	return 0;
